@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Letter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F8BBD0;
+    }
+
+    #love-letter {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      color: black;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 10%;
+      text-align: center;
+    }
+
+    .hearts img {
+      width: 100%;
+      height: auto;
+    }
+
+    #left-hearts {
+      left: 0;
+    }
+
+    #right-hearts {
+      right: 0;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts" id="left-hearts">
+    <img src="heart.png" alt="Red heart">
+  </div>
+
+  <div id="love-letter">
+    <h1 style="color: black">My Love Letter in HTML</h1>
+
+    <p>Dear My Beloved,</p>
+
+    <p>I wanted to express my joy, happiness, and gratitude for you. You are constantly on my mind, in every line of code and every moment of my life.</p>
+
+    <p>I appreciate you more than words can express.</p>
+
+    <ul style="color: black">
+      <li>Your smile lights up my world.</li>
+      <li>Your kindness is a source of inspiration.</li>
+    </ul>
+
+    <p>I promise to be your support, your partner in debugging, and your source of endless love.</p>
+
+    <p>I look forward to many more lines of code together, creating our beautiful program of life.</p>
+
+    <p>You are not just my partner; you are my favorite syntax in this journey of life.</p>
+
+    <p>Forever yours,<br>[Your Name]</p>
+  </div>
+
+  <div class="image-container">
+    <img src="image1.jpg" alt="Image 1" class="image">
+    <img src="image2.jpg" alt="Image 2" class="image">
+  </div>
+
+  <div class="hearts" id="right-hearts">
+    <img src="heart.png" alt="Red heart">
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.image');
+
+    images.forEach(image => {
+      image.addEventListener('click', () => {
+        const leftImage = document.querySelector('.image:first-child');
+        const rightImage = document.querySelector('.image:last-child');
+
+        const temp = leftImage.src;
+        leftImage.src = rightImage.src;
+        rightImage.src = temp;
+      });
+    });
+  </script>
+</body>
+</html>
