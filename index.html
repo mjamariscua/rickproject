@@ -15,9 +15,9 @@
         max-width: 600px;
         margin: 0 auto;
         padding: 20px;
-        border: 2px solid #ccc;
         border-radius: 10px;
         color: black;
+        box-shadow: 5px 6px 20px rgba(0,0,0,0.1);
       }
 
       .hearts {
@@ -87,8 +87,7 @@
         height: 200px;
         object-fit: cover;
         border: 2px solid #ccc;
-        border-radius: 40px;
-        margin: 10px;
+        border-radius: 20px;
         cursor: pointer;
       }
       #center {
@@ -103,6 +102,13 @@
         align-items: center;
         flex-wrap: wrap;
       }
+      .center-vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* 100% del viewport height */
+      }
 
       p {
         text-align: justify;
@@ -110,82 +116,90 @@
     </style>
   </head>
   <body>
-    <div id="center">
-      <div class="hearts animate__animated animate__zoomIn" id="left-hearts">
-        <div class="icon">
-          <a href="https://i.gifer.com/5jLE.gif" target="_blank">
-            <img src="https://i.gifer.com/5jLE.gif" alt="Beating heart" />
-          </a>
+
+    <div class="container-fluid center-vertical">
+      <div class="row">
+        <div class="col-md-4">
+          <div id="center">
+            <div class="hearts animate__animated animate__zoomIn" id="left-hearts">
+              <div class="icon">
+                <a href="https://i.gifer.com/5jLE.gif" target="_blank">
+                  <img src="https://i.gifer.com/5jLE.gif" alt="Beating heart" />
+                </a>
+              </div>
+            </div>
+      
+            <div class="hearts animate__animated animate__zoomIn" id="right-hearts">
+              <div class="icon">
+                <a href="https://i.gifer.com/5jLE.gif" target="_blank">
+                  <img src="https://i.gifer.com/5jLE.gif" alt="Beating heart" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="hearts animate__animated animate__zoomIn" id="right-hearts">
-        <div class="icon">
-          <a href="https://i.gifer.com/5jLE.gif" target="_blank">
-            <img src="https://i.gifer.com/5jLE.gif" alt="Beating heart" />
-          </a>
+        <div class="col-md-4">
+          <div id="love-letter">
+            <h1 style="color: black">Feliz cumpleaños 26 mi amor <3</h1>
+      
+            <p>
+              En este día tan especial quiero expresarte todo lo que tú significas
+              para mi y estoy agradecida de poderte tener en mi vida. A pesar de haber
+              tenido nuestros altos y bajos, en este momento, nos siento más fuertes
+              que nunca.
+            </p>
+      
+            <p>
+              Hoy, no solo celebramos tu nacimiento, sino también el hombre en que te
+              has convertido. Eres mi fuente de inspiración y cada día consigo nuevas
+              razones para admirarte y agradezco ser testigo de todo lo que has
+              logrado. No hay otra persona con la que prefiera pasar mi tiempo, así
+              sea viendo partidos de fútbol, porque siempre logras transmitirme lo
+              mucho que te apasiona, como vives cada jugada y disfrutas de cada gol,
+              lo que hace que para mí sea un momento muy especial. Hemos vivido cosas
+              tan especiales juntos, desde el un atardecer bonito hasta el mejor
+              desayuno del mundo. Cada plan, cita, viaje o escapada que hacemos la
+              atesoro con mucho amor.
+            </p>
+      
+            <p>
+              Ricardo Pérez gracias por cuidarme cada vez que me golpeo, por
+              escucharme y darme tu punto de vista más objetivo que tengas, por
+              apoyarme cuando estoy saturada o decaída o simplemente cuando estoy mal,
+              por chismear conmigo como dos comadres. Me encanta que quieras compartir
+              cada aspecto de ti conmigo, puede que no siempre nos gusten las mismas
+              cosas, pero es lindo saber que estamos dispuestos a escuchar al otro en
+              lo que le guste. Gracias por tantas risas y ocurrencias, creo que
+              estamos igual de locos. Gracias por nunca ser egoísta y siempre querer
+              ayudar. Eres un hermoso ser humano tal como eres.
+            </p>
+      
+            <p>
+              Feliz cumpleaños mi vida y te amo más de lo que las palabras pueden
+              expresar.
+            </p>
+            <p>Forever yours,<br />Gabriela Missel</p>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div id="love-letter">
-      <h1 style="color: black">Feliz cumpleaños 26 mi amor <3</h1>
-
-      <p>
-        En este día tan especial quiero expresarte todo lo que tú significas
-        para mi y estoy agradecida de poderte tener en mi vida. A pesar de haber
-        tenido nuestros altos y bajos, en este momento, nos siento más fuertes
-        que nunca.
-      </p>
-
-      <p>
-        Hoy, no solo celebramos tu nacimiento, sino también el hombre en que te
-        has convertido. Eres mi fuente de inspiración y cada día consigo nuevas
-        razones para admirarte y agradezco ser testigo de todo lo que has
-        logrado. No hay otra persona con la que prefiera pasar mi tiempo, así
-        sea viendo partidos de fútbol, porque siempre logras transmitirme lo
-        mucho que te apasiona, como vives cada jugada y disfrutas de cada gol,
-        lo que hace que para mí sea un momento muy especial. Hemos vivido cosas
-        tan especiales juntos, desde el un atardecer bonito hasta el mejor
-        desayuno del mundo. Cada plan, cita, viaje o escapada que hacemos la
-        atesoro con mucho amor.
-      </p>
-
-      <p>
-        Ricardo Pérez gracias por cuidarme cada vez que me golpeo, por
-        escucharme y darme tu punto de vista más objetivo que tengas, por
-        apoyarme cuando estoy saturada o decaída o simplemente cuando estoy mal,
-        por chismear conmigo como dos comadres. Me encanta que quieras compartir
-        cada aspecto de ti conmigo, puede que no siempre nos gusten las mismas
-        cosas, pero es lindo saber que estamos dispuestos a escuchar al otro en
-        lo que le guste. Gracias por tantas risas y ocurrencias, creo que
-        estamos igual de locos. Gracias por nunca ser egoísta y siempre querer
-        ayudar. Eres un hermoso ser humano tal como eres.
-      </p>
-
-      <p>
-        Feliz cumpleaños mi vida y te amo más de lo que las palabras pueden
-        expresar.
-      </p>
-      <p>Forever yours,<br />Gabriela Missel</p>
-    </div>
-
-    <div id="center2">
-      <div class="hearts animate__animated animate__zoomIn"  id="left-image">
-        <div class="icon">
-          <a target="_blank">
-            <img src="assets/image2.jpeg" alt="Image 2" class="image" />
-          </a>
+        <div class="col-md-4">
+          <div id="center2">
+            <div class="hearts animate__animated animate__zoomIn"  id="left-image">
+              <div class="icon">
+                <a target="_blank">
+                  <img src="assets/image2.jpeg" alt="Image 2" class="image" style="margin-right: -15px;" />
+                </a>
+              </div>
+            </div>
+      
+            <div class="hearts animate__animated animate__zoomIn" id="right-image">
+              <div class="icon">
+                <a target="_blank">
+                  <img src="assets/image1.jpeg" alt="Image 1" class="image" style="margin-left: -15px;" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="hearts animate__animated animate__zoomIn" id="right-image">
-        <div class="icon">
-          <a target="_blank">
-            <img src="assets/image1.jpeg" alt="Image 1" class="image" />
-          </a>
-        </div>
-      </div>
     </div>
 
   </body>
