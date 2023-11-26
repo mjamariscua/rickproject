@@ -1,112 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Love Letter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #F8BBD0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Letter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8bbd0;
+      }
 
-    #love-letter {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      color: black;
-    }
+      #love-letter {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        color: black;
+      }
 
-    .hearts {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      width: 10%;
-      text-align: center;
-    }
+      .hearts {
+        position: fixed;
+        width: 10%;
+        text-align: center;
+      }
 
-    .hearts img {
-      width: 100%;
-      height: auto;
-    }
+      .hearts img {
+        width: 100%;
+        height: auto;
+      }
 
-    #left-hearts {
-      left: 0;
-    }
+      #left-hearts {
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
 
-    #right-hearts {
-      right: 0;
-    }
+      #right-hearts {
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
 
-    .image-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
+      #left-image {
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 350px;
+      }
 
-    .image {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      margin: 10px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <div class="hearts" id="left-hearts">
-    <img src="heart.png" alt="Red heart">
-  </div>
+      #right-image {
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 350px;
+      }
 
-  <div id="love-letter">
-    <h1 style="color: black">MICHAEL PROBANDO</h1>
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
 
-    <p>Dear My Beloved,</p>
+      .image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid #ccc;
+        border-radius: 40px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      #center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #center2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
 
-    <p>I wanted to express my joy, happiness, and gratitude for you. You are constantly on my mind, in every line of code and every moment of my life.</p>
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="center">
+      <div class="hearts" id="left-hearts">
+        <div class="icon">
+          <a href="https://i.gifer.com/5jLE.gif" target="_blank">
+            <img src="https://i.gifer.com/5jLE.gif" alt="Beating heart" />
+          </a>
+        </div>
+      </div>
 
-    <p>I appreciate you more than words can express.</p>
+      <div class="hearts" id="right-hearts">
+        <div class="icon">
+          <a href="https://i.gifer.com/5jLE.gif" target="_blank">
+            <img src="https://i.gifer.com/5jLE.gif" alt="Beating heart" />
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <ul style="color: black">
-      <li>Your smile lights up my world.</li>
-      <li>Your kindness is a source of inspiration.</li>
-    </ul>
+    <div id="love-letter">
+      <h1 style="color: black">Feliz cumpleaños 26 mi amor <3</h1>
 
-    <p>I promise to be your support, your partner in debugging, and your source of endless love.</p>
+      <p>
+        En este día tan especial quiero expresarte todo lo que tú significas
+        para mi y estoy agradecida de poderte tener en mi vida. A pesar de haber
+        tenido nuestros altos y bajos, en este momento, nos siento más fuertes
+        que nunca.
+      </p>
 
-    <p>I look forward to many more lines of code together, creating our beautiful program of life.</p>
+      <p>
+        Hoy, no solo celebramos tu nacimiento, sino también el hombre en que te
+        has convertido. Eres mi fuente de inspiración y cada día consigo nuevas
+        razones para admirarte y agradezco ser testigo de todo lo que has
+        logrado. No hay otra persona con la que prefiera pasar mi tiempo, así
+        sea viendo partidos de fútbol, porque siempre logras transmitirme lo
+        mucho que te apasiona, como vives cada jugada y disfrutas de cada gol,
+        lo que hace que para mí sea un momento muy especial. Hemos vivido cosas
+        tan especiales juntos, desde el un atardecer bonito hasta el mejor
+        desayuno del mundo. Cada plan, cita, viaje o escapada que hacemos la
+        atesoro con mucho amor.
+      </p>
 
-    <p>You are not just my partner; you are my favorite syntax in this journey of life.</p>
+      <p>
+        Ricardo Pérez gracias por cuidarme cada vez que me golpeo, por
+        escucharme y darme tu punto de vista más objetivo que tengas, por
+        apoyarme cuando estoy saturada o decaída o simplemente cuando estoy mal,
+        por chismear conmigo como dos comadres. Me encanta que quieras compartir
+        cada aspecto de ti conmigo, puede que no siempre nos gusten las mismas
+        cosas, pero es lindo saber que estamos dispuestos a escuchar al otro en
+        lo que le guste. Gracias por tantas risas y ocurrencias, creo que
+        estamos igual de locos. Gracias por nunca ser egoísta y siempre querer
+        ayudar. Eres un hermoso ser humano tal como eres.
+      </p>
 
-    <p>Forever yours,<br>[Your Name]</p>
-  </div>
+      <p>
+        Feliz cumpleaños mi vida y te amo más de lo que las palabras pueden
+        expresar.
+      </p>
+      <p>Forever yours,<br />Gabriela Missel</p>
+    </div>
 
-  <div class="image-container">
-    <img src="image1.jpg" alt="Image 1" class="image">
-    <img src="image2.jpg" alt="Image 2" class="image">
-  </div>
+    <div id="center2">
+      <div class="hearts" id="left-image">
+        <div class="icon">
+          <a target="_blank">
+            <img src="assets/image2.jpeg" alt="Image 2" class="image" />
+          </a>
+        </div>
+      </div>
 
-  <div class="hearts" id="right-hearts">
-    <img src="heart.png" alt="Red heart">
-  </div>
+      <div class="hearts" id="right-image">
+        <div class="icon">
+          <a target="_blank">
+            <img src="assets/image1.jpeg" alt="Image 1" class="image" />
+          </a>
+        </div>
+      </div>
+    </div>
 
-  <script>
-    const images = document.querySelectorAll('.image');
-
-    images.forEach(image => {
-      image.addEventListener('click', () => {
-        const leftImage = document.querySelector('.image:first-child');
-        const rightImage = document.querySelector('.image:last-child');
-
-        const temp = leftImage.src;
-        leftImage.src = rightImage.src;
-        rightImage.src = temp;
-      });
-    });
-  </script>
-</body>
+  </body>
 </html>
